@@ -26,7 +26,7 @@ export default function Deletecoupon(props) {
     try {
       //   console.log(data);
       const response = await axios.post(
-        "https://smart-care-backend-topaz.vercel.app/v1/admin/coupons/delete",
+        "https://aggregator-backend.vercel.app/v1/admin/coupons/delete",
         { couponsCodes: data },
         {
           header: "Content-Type: application/json",
