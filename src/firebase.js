@@ -3,13 +3,12 @@ import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCRgnqpOobPwjvzvBKJsgyFQViN3TufteA",
-  authDomain: "smart-care-ca9ee.firebaseapp.com",
-  projectId: "smart-care-ca9ee",
-  storageBucket: "smart-care-ca9ee.firebasestorage.app",
-  messagingSenderId: "900524263296",
-  appId: "1:900524263296:web:c81deab9107eca4b5be365",
-  measurementId: "G-J8PV49805L",
+  apiKey: "AIzaSyCqfcIjMvODb-7iVS7mgQbj6MwcQp7CHmc",
+  authDomain: "aggregator-be7d4.firebaseapp.com",
+  projectId: "aggregator-be7d4",
+  storageBucket: "aggregator-be7d4.firebasestorage.app",
+  messagingSenderId: "128157644912",
+  appId: "1:128157644912:web:a0dc2d631670b21e4f1cb5"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
