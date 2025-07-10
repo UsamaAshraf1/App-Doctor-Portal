@@ -63,8 +63,8 @@ export default function Login(props) {
         localStorage.setItem("user", JSON.stringify(response.data));
         props.setRole(response.data.data.role);
         props.setLogin(true);
-        window.location.reload();
-        navigate("/");
+        // window.location.reload();
+        // navigate("/");
       }
     } catch (error) {
       toast.dismiss();

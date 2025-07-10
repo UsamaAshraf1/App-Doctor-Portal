@@ -10,13 +10,13 @@ export default function DoctorDetail(props) {
   const [isLoading, setIsLoading] = useState(true); // New state for loading
   const doctordetail = localStorage.getItem("user");
   const doctorData = JSON.parse(doctordetail);
-  const doctorId = doctorData?.data?.id;
+  const doctorId = doctorData?.data?.doctor?.id;
 
   const fetchDoctorById = async () => {
     try {
       setIsLoading(true); // Set loading to true before fetching
       const response = await axios.get(
-        `${url}/v1/doctor/get-by-id?id=${doctorId}`
+        `${url}/v1/doctor/get-by-uid?id=${doctorId}`
       );
       setDoctor(response.data.data);
     } catch (error) {

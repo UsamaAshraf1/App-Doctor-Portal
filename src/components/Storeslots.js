@@ -11,7 +11,7 @@ import { url } from "../utils/urls.js";
 export default function Storeslots(props) {
   const userData = localStorage.getItem("user");
   const doctorData = JSON.parse(userData);
-  const doctorId = doctorData?.data?.id;
+  const doctorId = doctorData?.data?.doctor?.id;
   useEffect(() => {
     setStoreid(props.storeId);
     props.setName("Store Slots");

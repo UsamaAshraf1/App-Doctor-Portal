@@ -17,7 +17,7 @@ import { url } from "../utils/urls.js";
 export default function Slots(props) {
   const userData = localStorage.getItem("user");
   const doctorData = JSON.parse(userData);
-  const doctorId = doctorData?.data?.id;
+  const doctorId = doctorData?.data?.doctor?.id;
   const [authToken, setAuthToken] = useState(
     localStorage.getItem("authToken") || ""
   );
